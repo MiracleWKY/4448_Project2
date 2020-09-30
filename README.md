@@ -1,39 +1,19 @@
-# 4448 Project 2 (based on Project 1)
-### Contact information
- - Name: Leyen Qian (108384916)</br>
- - Email: jiqi2811@colorado.edu</br>
- - Team Members: Yi Hou (109288627), Puyuan Zhang (107207898)
+## Project Title: Zoo
 
-### Files Description
- - Main.java  ( ./Main.java )</br>
-the entry point of the program.</br>
+### Team members:
+Keyu Wu, 107114346, kewu6458@colorado.edu<br>
+Tianchen Wang, 107075265, tiwa4690@colorado.edu<br>
+Yi Hou, 109288627, yiho1721@colorado.edu<br>
 
- - dayatthezoo.out ( ./dayatthezoo.out )</br>
-sample output (number of days: 7)</br>
+### Comments and Assumption:
+In the Zoo folder, it contains the details of this project; The Animal.java and ZooEmployee.java are the abstract class for different kind of animals and Zookeeper. After we go into the Zoo folder there are Animals and ZooEmployees folder. In the Animals folder, it has the details of different species and in the ZooEmployees folder, it contains the details about the Zookeeper. <br>
 
- - Animal.java ( ./Animals/Animal.java )</br>
-the abstract class inherited by all beast divisions (Canine, Feline, Pachyderm and Ursidae).
+### Issues:
+Initially, we have difficulties to separate the code into multiple files. Mostly because of haven't written the code in Java. So, we have to go over the "Package" tutorial in Java on the internet. <br>
+Also, we need to go over the 'git' information to know how to push the code into GitHub. <br>
 
- - Canine, Feline, Pachyderm and Ursidae classes are inherited by animal speces under the breed directory respectively.</br>
-( ./Animals/Canine/Breed.* )</br>
-( ./Animals/Feline/Breed/* )</br>
-( ./Animals/Pachyderm.Breed/* )</br>
-( ./Animals/Ursidae/Breed/* )
+### Execution:
+Run this Project using commend (under this dir): <br>
+$ javac main.java <br>
+$ java main <br>
 
- - Panda.java (./Animals/Ursidae/Breed/Panda.java)
-For the eat method, it uses the one provided by the UrsidaeDelegation, instead the one that inherited from Animal.
-
- - Observer and Subject (./Zoo/Observer/*)
-Interface used for observer patten.
-
- - Constants.java (./Zoo/Employee/Constants.java)
-It defines the flags used in observer patten and times for ZooClock.
-
- - Zoo.java ( ./Zoo/Zoo.java )</br>
-zoo class can store all employee and animal instances.
-
- - ZooKeeper, ZooFoodServer and ZooAnnouncer ( ./Zoo/Employee/* )</br>
-It inherites the ZooEmployee class from the partent dictory, and provides additional function that specific to zoo keeper, such as feed animals and roll call animals. Any of them can be subject or observer (need to implement the corresponding interface)
-
- - ZooClock.java (./Zoo/ZooClock.java)</br>
-ZooClock is the main subject, ZooKeeper, ZooFoodServer are the direct observers of it. Their behaviors are decided by ZooClock.
